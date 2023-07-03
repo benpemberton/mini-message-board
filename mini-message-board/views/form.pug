@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Enter your message here!
+
+    form(method="POST" action="/new")
+        input(name="name" placeholder="Name")
+        input(name="message" placeholder="Message")
+        button(type="submit") Send

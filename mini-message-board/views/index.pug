@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  each obj in messages
+    h1= obj.text
+    p This is a message from #{obj.user}
+    p= obj.date
+
+  a(href="/new") Click to add message
